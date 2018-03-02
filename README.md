@@ -6,7 +6,7 @@ Created 20x20 pixel stretched bounded boxes of all digits.
 Ran it through Gaussian and Bernoulli Naive Bayes
 As well as dicision forests of varing lengths.
 
-Python 3.6 was used to code Problem 2, PyCharm was used for the IDE, Alt+Shift+E was used to run the
+Python 3.6 was used to code, PyCharm was used for the IDE, Alt+Shift+E was used to run the
 code in sections. It was interesting that the Gaussian and the Bernoulli for NB flipped their accuracy
 depending on the formatting of the image data. I believe this was because the Bernoulli is meant for
 binary features. Specifically, the untouched images hard more white spaces which the Bernoulli
@@ -14,13 +14,14 @@ distribution could clearly mark as ‘0’ while the Gaussian distribution was f
 following a normal distribution which was not accurate. When the images were bounded, the Gaussian
 performed better because there was less white space and more ink for the normal distribution to model.
 
-For my Bounded stretched box, I choose to keep the grey scale in the cropped and stretched image
-because I saw the assignment showed the “2” as grey scales even in the bounded box picture. Also I used
+For my Bounded stretched box, I choose to keep the grey scale in the cropped and stretched image. Also I used
 the mean threshold per image as the cropping threshold rather than making it a constant for all images
 because it would be more flexible for lighter drawn numbers.
 
 Accuracy (F1 Score) Gaussian Bernoulli
+
 untouched images        52%    83%
+
 stretched bounding box  83%    76%
 
 Untouched raw pixels:
